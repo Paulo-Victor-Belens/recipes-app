@@ -26,16 +26,12 @@
     "validator": "^13.9.0"
   },
   "scripts": {
-    "start": "env ESLINT_NO_DEV_ERRORS=true react-scripts start",
+    "start": "env react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test-coverage": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject",
-    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx",
     "lint:styles": "npx stylelint '**/*.css'"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -53,15 +49,12 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "@trybe/eslint-config-frontend": "^1.7.1",
     "clipboardy": "^2.3.0",
     "fs-extra": "^10.1.0",
     "mocha": "^10.2.0",
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.2.2",
-    "mochawesome-report-generator": "^6.2.0",
-    "stylelint": "^14.16.1",
-    "stylelint-order": "^5.0.0"
+    "mochawesome-report-generator": "^6.2.0"
   },
   "jest": {
     "coveragePathIgnorePatterns": [
