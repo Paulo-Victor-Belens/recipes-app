@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap') ;
+
+.hidden-card {
+  display: none;
+}
+
+.preview-card {
+  justify-content: center;
+  margin: 20px 30px;
+  position: fixed;
+  top: -10px;
+}
+
+.card-random {
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card-random img {
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.h5 {
+  margin: 15px 0;
+}
+
+.close-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-btn > button {
+  margin: 5px 11px 0;
+}
+
+
+.recipe-preview-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-around;
+  position: absolute;
+  width: 260px;
+}
+
+.recipe-preview-content > button {
+  position: relative;
+  right: -110px;
+  top: 10px;
+}
+
+.btn-random .btn-login:nth-child( 1 ) {
+  background-color: rgba(230, 0, 0, 0.733);
+}
+
+.preview-name {
+  align-items: center;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  width: 220px;
+}
+
+.preview-name p {/* Oculta qualquer conteúdo excedente */
+  color: red;
+  font-family: Lobster , cursive , sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.category-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  justify-content: center;
+  width: 100%;
+}
+
+.category-container p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.random-btn-container {
+  display: flex;
+  height: 40px;
+  justify-content: space-around;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+
+.random-again-btn:active, .like-btn:active {
+  box-shadow: none;
+}
+
+.remove-preview-btn {
+  background: none;
+  border: none;
+  border-radius: 100%;
+  height: 14px;
+  margin-right: -210px;
+  margin-top: 6px;
+  position: absolute;
+  top: 0;
+  width: 14px;
+}
+
+.remove-preview-btn img {
+  height: 14px;
+  width: 14px;
+}

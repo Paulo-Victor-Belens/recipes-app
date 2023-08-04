@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+
+  --width: 99%;
+
+  --heigth: calc(var(--width) / 1.62);
+}
+
+.container {
+  margin: 25px auto;
+}
+
+.bg-color {
+
+  /* backdrop-filter: blur(2px); */
+  backdrop-filter: blur(1px);
+  background: rgba(230, 0, 0, 0.733);
+  box-shadow: 0 5px 21px 0 rgba(31, 38, 135, 0.37);
+}
+
+button {
+  cursor: pointer;
+}
+
+main {
+  background-color: #efedee;
+}
+
+.message-container {
+  background-color: #f8f8f8;
+  display: none; /* Inicialmente, esconderemos a mensagem */
+  padding: 10px;
+  text-align: center;
+}
+
+.message {
+  color: #333;
+}
+
+/* Media query para mostrar a mensagem apenas em resoluções de desktop */
+
+@media screen and ( min-width : 576px ) {
+
+  main {
+    display: none;
+  }
+
+  .message-container {
+    align-items: center;
+    background-color: #f87575;
+    display: flex;
+    flex-direction: column;
+    font-size: 60px;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .message-container > div {
+    align-items: center;
+    background-color: #efedee;
+    border-radius: 100%;
+    display: flex;
+    height: 350px;
+    justify-content: center;
+    width: 350px;
+  }
+
+  .message-container > div > img {
+    margin-left: 30px;
+    width: 350px;
+  }
+}
+
+.custom-loader {
+  animation: d9 1s infinite linear;
+  border-radius: 50%;
+  box-shadow: -60px 15px , -60px 15px , -60px 15px;
+  clip-path: inset(-45px);
+  color: #766df4;
+  height: 12px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-15px);
+  width: 12px;
+}
+
+@keyframes d9 {
+
+  16.67% { box-shadow: -60px 15px , -60px 15px , 19px 15px;}
+
+  33.33% { box-shadow: -60px 15px , 0 15px , 19px 15px;}
+
+  40%, 60% { box-shadow: -19px 15px , 0 15px , 19px 15px;}
+
+  66.67% { box-shadow: -19px 15px , 0 15px , 60px 15px;}
+
+  83.33% { box-shadow: -19px 15px , 60px 15px , 60px 15px;}
+
+  100% { box-shadow: 60px 15px , 60px 15px , 60px 15px;}
+}
+
+.div-cards {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.recipe-card {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  width: 46vw;
+}
+
+.recipe-card > a {
+  color: black;
+  text-decoration: none;
+}
+
